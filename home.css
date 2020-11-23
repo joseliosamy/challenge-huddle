@@ -81,6 +81,10 @@ header a img{
     background-color: hsl(300, 69%, 71%);
     color: #fff;
 }
+#content .grid-item3 p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
 footer{
     width: 90%;
     height: 10%;
