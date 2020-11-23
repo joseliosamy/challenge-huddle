@@ -12,7 +12,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## Preview
 
- <a href="https://challenge-hundle.vercel.app/">Click</a>
+ Take a look. <a href="https://challenge-hundle.vercel.app/">Click-me</a>.
 
 ## Where to find everything
 
