@@ -1,0 +1,114 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #674baf;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+#page-home{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+header{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+header a{
+    width: 100%;
+}
+header a img{
+    width: max(20%, 180px);
+    max-width: 242px;
+}
+#content{
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image title"
+    "image texto"
+    "image button"
+    ;
+}
+#content .grid-item1{
+    grid-area: image;
+}
+#content .grid-item2{
+    grid-area: title;
+    margin-left: 10%;
+    display: flex;
+    align-items: flex-end;
+}
+#content .grid-item3{
+    grid-area: texto;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#content .grid-item3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    color: #674baf;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 2px 10px #22193a;
+    transition: 150ms;
+}
+#content .grid-item3 a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+footer{
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #socials a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 150ms;
+}
+footer #socials a:hover{
+    color: hsl(300, 69%, 71%);
+}
+footer p.attribution{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    color: #fff;
+}
+footer p.attribution a{
+    text-decoration: none;
+    color: #fff;
+}
+footer p.attribution a:hover{
+    color: #d1d1d1;
+}
+    
