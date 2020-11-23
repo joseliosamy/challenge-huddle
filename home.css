@@ -29,9 +29,6 @@ header{
     display: flex;
     align-items: center;
 }
-header a{
-    width: 100%;
-}
 header a img{
     width: max(20%, 180px);
     max-width: 242px;
