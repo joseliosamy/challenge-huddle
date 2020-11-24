@@ -190,7 +190,7 @@ footer p.attribution a:hover{
     #content .grid-item3 a{
         width: 80%;
         height: min(20vw, 70px);
-        font-size: max(2vw, 9px);
+        font-size: max(3vw, 12px);
         border-radius: 40px;
         margin-top: 30px;
     }
