@@ -22,6 +22,7 @@ body{
 #page-home{
     width: 90%;
     height: 90%;
+    max-height: 800px;
     margin: 0 auto;
 }
 header{
@@ -47,6 +48,7 @@ header a img{
 #content .grid-item1{
     grid-area: image;
 }
+
 #content .grid-item2{
     grid-area: title;
     margin-left: 10%;
@@ -82,10 +84,13 @@ header a img{
     margin-top: 30px;
     font-size: 1.2rem;
 }
-footer{
+#footer{
     width: 90%;
     height: 10%;
     margin: 0 auto;
+}
+footer{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +104,7 @@ footer #socials a{
 }
 footer #socials a:hover{
     color: hsl(300, 69%, 71%);
+    text-shadow: 0 2px 10px #22193a;
 }
 footer p.attribution{
     font-family: 'Open Sans', sans-serif;
@@ -112,4 +118,106 @@ footer p.attribution a{
 footer p.attribution a:hover{
     color: #d1d1d1;
 }
-    
+ 
+@media(min-width: 1400px){
+    #content{
+        max-width: 1300px;
+    }
+    footer{
+        max-width: 1300px;
+    }
+}
+@media(max-width: 1100px){
+    #content .grid-item1{
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    #content .grid-item1 img{
+        width: max(100%, 300px);
+    }
+    #content .grid-item3 p,
+    #content .grid-item3 a{
+        font-size: max(1rem, 10px);
+    }
+}
+@media(max-width: 900px){
+    #content .grid-item1{
+        display: flex;
+        align-items: center;
+    }
+    #content .grid-item3 h1{
+        width: max(100%, 400px);
+    }
+    #content .grid-item3 p,
+    #content .grid-item3 a{
+        font-size: max(2.2vw, 12px);
+    }
+}
+@media(max-width: 660px){
+    #content{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;     
+    }
+    #content .grid-item1{
+        margin: 0 0 30px 0;
+    }
+    #content .grid-item1 img{
+        width: 50vw;
+    }
+    #content .grid-item2,
+    #content .grid-item3{
+        margin: 0;
+    }
+    #content .grid-item2 h1{
+        font-size: 5vw;
+        text-align: center;
+    }
+    #content .grid-item3{
+        display: flex;
+        align-items: center;
+    }
+    #content .grid-item3 p{
+        font-size: 3vw;
+        text-align: center;
+    }
+    #content .grid-item3 a{
+        width: 80%;
+        height: min(20vw, 85px);
+        font-size: 3vw;
+        border-radius: 40px;
+        margin-top: 30px;
+    }
+    header a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "soci" "atri";
+    }
+    footer p.attribution{
+        grid-area: atri;
+        text-align: center;
+        font-size: min(5vw, 10px);
+    }
+    footer #socials{
+        grid-area: soci;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer #socials a{
+        margin: 0 10px;
+    }
+}
+@media(max-width: 320px){
+    body{
+        background-image: url(/images/bg-mobile.svg);
+    }
+}
