@@ -48,6 +48,9 @@ header a img{
 #content .grid-item1{
     grid-area: image;
 }
+#content .grid-item1 img{
+    width: 100%;
+}
 
 #content .grid-item2{
     grid-area: title;
