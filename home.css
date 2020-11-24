@@ -227,3 +227,11 @@ footer p.attribution a:hover{
         background-image: url(/images/bg-mobile.svg);
     }
 }
+@media(max-width: 284px){
+    body{
+        width: 100%;
+    }
+    header a img{
+        width: 100%;
+    }
+}
